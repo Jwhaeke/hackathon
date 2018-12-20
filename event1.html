@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>Hackathon</title>
+    <link rel="stylesheet" type="text/css" href="css/event.css">
+     <script type="text/javascript" src="js/javascript.js"></script>
+
+</head>
+
+<body onload="startcd()">
+
+    <header>
+        <div class="container">
+            <img class="hoofd" src="images/header.jpg" height="650px" width="100%" />
+            <img class="hfoto" src="images/cg1.jpg" />
+            <div class="menu">
+                <nav class="menu1">
+                    <a class="menu__link" href="index.html">Events</a>&ensp;
+                    <a class="menu__link" href="profile.html">Profiles</a>&ensp;
+                </nav>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+
+
+    <!--blabla-->
+    <br><br>
+    <h2>Hackathon</h2>
+    <br><br>
+    <div class="txtfoto">
+        <p id="koptxt">
+            Op 29 en 30 november is het weer zover! De CodeGorilla Hack-A-Thon<br> We gaan er weer een leuk event van maken, vol met eten drinken en<br> voornamelijk gezelligheid.
+            <br>Dit event loopt nog:<br>
+        </p>
+
+        <p id="countdown"></p><br><br>
+        <form>
+            <input type="text" id="intxt" placeholder="Naam Hier">
+            <button onclick=test() class="button" type="button"><span>Geef jezelf op voor dit event!</span></button>
+        </form>
+        <img src="images/cg1.jpg" />
+        <br>
+        <p id="opgegeven">Deze mensen hebben zich al opgegeven:<br></p>
+    </div>
+
+
+
+    <script>
+        var fl = 0;
+        //tijd naar waar afgeteld moet worden
+        var tdatum = new Date("Nov 30, 2018 13:30:00").getTime();
+
+
+        var x = setInterval(function() {
+
+            //huidige tijd
+            var nu = new Date().getTime();
+
+            //restant tijd berekenen
+            var restant = tdatum - nu;
+
+            //t]restant tijd parsen naar dagen,uren,minuten en seconden (uitkomst restand is in milisecondes)
+            var dagen = Math.floor(restant / (1000 * 60 * 60 * 24));
+            var uren = Math.floor((restant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minuten = Math.floor((restant % (1000 * 60 * 60)) / (1000 * 60));
+            var seconden = Math.floor((restant % (1000 * 60)) / 1000);
+
+            //tijd aanpassen in de html met innerHTML
+            document.getElementById("countdown").innerHTML = "<b>" + dagen + " dagen " + uren + " uren " +
+                minuten + " minuten " + seconden + " secondes</b>";
+
+            //tijd 0 = klaar, +stop clearinterval
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Klaar!";
+            }
+            //interval 1000milisec
+        }, 1000);
+
+        //klikken op de button
+        
+    </script>
+</body>
+
+</html>

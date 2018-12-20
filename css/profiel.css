@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.menu {
+    position: absolute;
+    display: inline;
+    top: 35px;
+    right: 50px;
+    font-weight: bold;
+    text-transform: lowercase;
+    border-style: solid;
+    border-color: lightgoldenrodyellow;
+    border-radius: 25px 25px 25px 25px;
+    font-family: "Source Sans Pro", serif;
+    opacity: 0.85;
+}
+
+.menu a:any-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 8px;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+header img {
+    opacity: 0.7;
+}
+
+#searchbar {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#profile1 {
+    margin-left: 27%;
+}
+
+#profiles {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#jan {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#harm {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#sjaak {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#jordie {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#christiaan {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#janwillem {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: white;
+    font-size: 14px;
+    line-height: .75em;
+    width: 310px;
+    height: 13%;
+    border-style: groove;
+    box-shadow: 0 0 2px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#foto1 {
+    margin-left: 10px;
+    border-radius: 50%;
+    float: left;
+}
+
+#foto1:hover {
+    width: 82px;
+    height: 82px;
+}
+
+h2 {
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0.75;
+}
+
+h2 #testje {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+table {
+    display: inline;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+div.search,
+a.search {
+    width: 100px;
+    border: 1px solid #DFAD00;
+    background: #FFFFEE;
+    padding: 0px 5px;
+    font-weight: 900;
+    color: #00009C;
+    text-align: center;
+}

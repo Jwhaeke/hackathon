@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            //For each a - href starting with a #
+            $('a[href*=#]').each(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname &&
+                    this.hash.replace(/#/, '')) {
+                    var $targetId = $(this.hash),
+                        $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                    if ($target) {
+                        var targetOffset = $target.offset().top;
+                        $(this).click(function() {
+                            $("#nav li a").removeClass("active");
+                            $(this).addClass('active');
+                            $('html, body').animate({
+                                scrollTop: targetOffset
+                            }, 1000);
+                            return false;
+                        });
+                    }
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- BEGINNING OF THE HEADER -->
+    <header id="top">
+        <div class="container">
+            <img src="images/header.jpg" height="650px" width="100%" />
+            <div class="msg">Community Page</div>
+            <div class="menu">
+                <nav class="menu1">
+                    <a class="menu__link" href="#events">Events</a>&ensp;
+                    <a class="menu__link" href="profile.html">Profiles</a>&ensp;
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- END OF THE HEADER -->
+
+    <!-- BEGINNING OF DIVIDER BETWEEN HEADER AND EVENTS -->
+    <div class="divider">
+        <span>
+ 				
+ 				<img id="ceespot" src="images/ceespot.jpg" alt="" />
+ 				<p id="upevent"> Upcoming Events below </p> <br/>
+ 				<p id="sign"> Sign up now! </p>
+
+ 				<a href="#events"><div class="move"><img src="images/arrow.png" alt="" height="200px" width="300px" /></div></a>
+ 			</span>
+
+    </div>
+
+    <!-- END OF DIVIDER BETWEEN HEADER AND EVENTS -->
+    <!-- BEGINNING OF EVENTS -->
+    <div id="events">
+        <div class="eventblock">
+
+            <!-- 1e event -->
+            <a href="event1.html">
+                <div id="codegorilla">
+                    <h3 class="text">
+                        Hackathon</h3>
+                </div>
+            </a>
+
+            <!-- 4e event -->
+            <a href="event4.html">
+                <div id="event4">
+                    <h4 class="text"> Event4! </h4>
+                </div>
+            </a>
+
+            <!-- 7e event -->
+            <a href="event7.html">
+                <div id="event7">
+                    <h4 class="text"> Event7! </h4>
+                </div>
+            </a>
+
+            <!-- 2e event -->
+            <a href="event2.html">
+                <div id="event2">
+                    <h2 class="text"> Nieuw Jaars Borrel </h2>
+                </div>
+            </a>
+
+            <!-- 5e event -->
+            <a href="event5.html">
+                <div id="event5">
+                    <h4 class="text"> Event5! </h4>
+                </div>
+            </a>
+
+            <!-- 8e event -->
+            <a href="event8.html">
+                <div id="event8">
+                    <h4 class="text"> Event8! </h4>
+                </div>
+            </a>
+
+            <!-- 3e event -->
+            <a href="event3.html">
+                <div id="event3">
+                    <h4 class="text"> Event3! </h4>
+                </div>
+            </a>
+
+            <!-- 6e event -->
+            <a href="event6.html">
+                <div id="event6">
+                    <h2 class="text"> Event6! </h2>
+                </div>
+            </a>
+
+            <!-- 9e event -->
+            <a href="event9.html">
+                <div id="event9">
+                    <h2 class="text"> Event9! </h2>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <!--
+		<div class="footer">
+			<a href="#top"><h3> Back to top </h3></a>
+		</div>
+	-->
+</body>
+
+</html>
